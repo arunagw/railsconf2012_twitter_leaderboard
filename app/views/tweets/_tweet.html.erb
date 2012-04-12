@@ -1,5 +1,5 @@
 <%tweets.each_with_index do |tweet, index| %>
-      <div class="keynote" id="welcome" style="background-color:lightyellow;">
+      <div class="keynote" style="background-color:lightyellow;">
 	    <%= tweet["html"].try(:html_safe)%>
 	  </div>
 <%end%>

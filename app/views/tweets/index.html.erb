@@ -5,14 +5,13 @@
 
 			<div class="roundbox">
 				<% @users.each do |user| %>
-				<div class="logo">
-                <img src=<%= "#{@redis.hget(user[:member], "profile_image_url")}"%>  width="75"  height="75"/>
-                <a href="http://twitter.com/<%= "#{@redis.hget(user[:member], "from_user")}"%>">
-                  @<%= "#{@redis.hget(user[:member], "from_user")}"%> (<%= user[:score].to_i%>)
-                </a>
-					
-				<%end%>
-				</div>
+				  <div class="logo">
+                    <img src=<%= "#{@redis.hget(user[:member], "profile_image_url")}"%>  width="75"  height="75"/>
+                    <a href="http://twitter.com/<%= "#{@redis.hget(user[:member], "from_user")}"%>">
+                      @<%= "#{@redis.hget(user[:member], "from_user")}"%> (<%= user[:score].to_i%>)
+                    </a>
+				  </div>
+				 <%end%>
 			</div> <!-- .roundbox -->
 		</div>
 	</section>
@@ -20,7 +19,9 @@
       <h1 class="tk-adelle">Tweets</h1>
 
   <div id="keynotes">
-	  <%= render :partial => 'tweet', :locals => {:tweets => @tweets}%>
+	  <h3 class="tk-adelle">People who are leading!!</h3>
+	  	<%= render :partial => 'tweet', :locals => {:tweets => @tweets}%>
+	  
 	  <div>
   </div>
 
