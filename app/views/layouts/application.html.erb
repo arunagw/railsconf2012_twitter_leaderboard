@@ -7,7 +7,23 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header role="banner" id="page_header">
+<div class="page">
+	<h1>
+		<b>Ruby Central presents RailsConf 2012 in Austin, TX</b>
+<a href="/" title="RailsConf 2012 Home">
+	<%= image_tag("logo_railsconf-2012.png", :id => 'rc_logo' )%>
+	<%= image_tag("ribbon.png", :id => 'austin_ribbon' )%>
+</a>		
+	</h1>
+</div>
 
+<nav role="navigation" id="main_nav">
+    <div id="hashtag">
+      #railsconf2012
+    </div>
+  </nav>
+</header>
 <%= yield %>
 
 </body>

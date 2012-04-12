@@ -6,6 +6,16 @@ gem 'rails', '3.2.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 
+gem 'json'
+gem "redis"
+gem "leaderboard"
+gem "twitter"
+gem "embedly"
+
+gem 'will_paginate'
+
+
+gem "unicorn"
 
 # Gems used only for assets and not required
 # in production environments by default.
