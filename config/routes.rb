@@ -1,4 +1,7 @@
 Railsconf2012TwitterLeaderboard::Application.routes.draw do
+  resources :tweets do
+  end
+  
   get "tweets/index"
 
   # The priority is based upon order of creation:

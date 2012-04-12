@@ -634,4 +634,7 @@ table.grid .empty {
 	background-color:rgba(255, 255, 255, 0);
 }
 
+.embedly_twitter {
+  background: none !important;
+}
 
