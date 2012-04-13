@@ -2,7 +2,7 @@ class TweetsController < ApplicationController
 
 
   def index
-    @tweets = (@redis.lrange(tweet_key, 0, -1).collect{|a| JSON.parse(a)}).paginate(:page => params[:page], :per_page => 25)
+    @tweets = (@redis.lrange(tweet_key, 0, -1).collect{|a| JSON.parse(a)}).paginate(:page => params[:page], :per_page => 10)
     @users = highscore_lb.leaders(1)
   end
 

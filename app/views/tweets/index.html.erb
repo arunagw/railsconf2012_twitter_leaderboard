@@ -20,9 +20,13 @@
 
   <div id="sessions">
 	  <h3 class="tk-adelle">People who are leading!!</h3>
+	  <div id="tweets">
 	  	<%= render :partial => 'tweet', :locals => {:tweets => @tweets}%>
-	  
+	  </div>
 	  <div>
   </div>
 
  </section>
+ 
+ <%= will_paginate @tweets %>
+ 
