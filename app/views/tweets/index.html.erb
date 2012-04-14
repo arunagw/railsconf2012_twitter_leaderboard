@@ -1,4 +1,17 @@
 <section id="pagebody" role="main">
+	
+	
+  <h1 class="tk-adelle">Tweets</h1>
+
+  <div id="sessions">
+	  <h3 class="tk-adelle">People who are leading!!</h3>
+	  <div id="tweets">
+	  	<%= render :partial => 'tweet', :locals => {:tweets => @tweets}%>
+	  </div>
+  </div>
+  
+
+	
     <section id="sidebar">
   		<div id="sponsors">
 			<h3><a href="https://twitter.com/arunagw" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @arunagw</a>
@@ -23,15 +36,6 @@
 		</div>
 	</section>
 
-      <h1 class="tk-adelle">Tweets</h1>
-
-  <div id="sessions">
-	  <h3 class="tk-adelle">People who are leading!!</h3>
-	  <div id="tweets">
-	  	<%= render :partial => 'tweet', :locals => {:tweets => @tweets}%>
-	  </div>
-	  <div>
-  </div>
 
  </section>
  

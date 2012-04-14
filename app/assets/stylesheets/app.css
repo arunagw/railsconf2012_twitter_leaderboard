@@ -257,7 +257,7 @@ body #pagebody {
 }
 
 body section#sidebar {
-	float:right;
+	float:left;
 	margin-left:20px;
 	margin-bottom:50px;
 	width:170px;
@@ -553,6 +553,7 @@ body .reviewer-table td {
 }
 
 .sponsors, #sessions, #keynotes {
+	float: left;
 	margin:3em 0;
 	padding:0;
 }
@@ -569,7 +570,7 @@ body .reviewer-table td {
 	padding:1em;
 	background:white;
 	color:black;
-	width:740px;
+	width:730px;
 	margin-bottom:2em;
 }
 
@@ -636,8 +637,4 @@ table.grid .empty {
 
 .embedly_twitter {
   background: none !important;
-}
-
-.embedly_twitter p{
-
 }
