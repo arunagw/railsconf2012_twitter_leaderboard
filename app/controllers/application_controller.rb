@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
       
   before_filter :redis
-  before_filter :authenticate    
+  #before_filter :authenticate    
   
   def redis
     @redis ||= Redis.new(:host => "localhost", :port => 6379)
